@@ -3,6 +3,7 @@ package airguitar.org.actionbarswitch;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.CompoundButton;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         switchView.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Log.d("checked", Boolean.toString(isChecked));
                 // Start or stop your Service
             }
         });
